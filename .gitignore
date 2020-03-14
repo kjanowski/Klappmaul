@@ -1,0 +1,6 @@
+/PseudoBot/res/model/*.blend1
+/nbproject/private
+/build/
+/dist/
+/lib/log
+*.blend1

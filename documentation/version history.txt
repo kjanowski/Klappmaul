@@ -1,0 +1,258 @@
+version 4.0.0
+- date: 14th March 2020
+- RobotEngine Version: 3.0.0
+- PseudoBot renamed to Klappmaul
+- Package renamed to de.kmj.robots.klappmaul
+
+version 3.3.4
+- date: 17th December 2019
+- RobotEngine Version: 2.5.2
+- PseudoBot features:
+	- bookmark syntax can be configured with a regular expression
+
+version 3.3.3
+- date: 13th December 2019
+- RobotEngine Version: 2.5.2
+- PseudoBot features:
+	- now supports "accessories" mesh attached to the head
+	- Santa hat included
+
+version 3.3.2
+- date: 17th October 2019
+- RobotEngine Version: 2.5.2
+- PseudoBot features:
+    - MaryTTS configuration fixed, effects are now set correctly
+
+version 3.3.1
+- date: 18th July 2019
+- RobotEngine Version: 2.5.0
+- PseudoBot features:
+    - added body model 03 with shoulders
+
+version 3.3.0
+- date: 27th May 2019
+- RobotEngine Version: 2.4.1
+- PseudoBot features:
+    - removed third party Collada importer
+    - removed unused StatusPanel
+    - removed option for hiding VoicePanel
+        - automatically hidden for MaryTTS
+        - automatically shown for Text and MIDI outputs
+
+version 3.2.2
+- date: 24th May 2019
+- RobotEngine Version: 2.4.1
+- PseudoBot features:
+    - added application icon
+    - removed FreeTTS support
+
+version 3.2.1
+- date: 4th March 2019
+- RobotEngine Version: 2.4.1
+- PseudoBot features:
+    - fixed bug which made the graphics freeze
+    - gaze animation now sends properly timed "finished" message
+
+version 3.2.0
+- date: 14th Nov 2018
+- RobotEngine Version: 2.4.1
+- PseudoBot features:
+	- MaryTTS: now uses separate threads for preparing bookmarks and audio
+	- "move" command implemented
+
+version 3.1.3
+- date: 14th Aug 2018
+- RobotEngine Version: 2.2.1
+- PseudoBot features:
+	- MaryTTS: F0Add and output channel(s) are now configurable 
+
+version 3.1.2
+- date: 20th July 2018
+- RobotEngine Version: 2.2.1
+- PseudoBot features:
+    - MaryTTS:
+		- bookmark timing now based on ACOUSTPARAMS instead of prefix output
+			/!\ currently, this only works if the word preceding the bookmark
+			is that word's first occurrence!
+		- re-enabled pitch settings
+    
+version 3.1.1
+- date: 13th July 2018
+- RobotEngine Version: 2.2.1
+- PseudoBot features:
+    - speech: improved bookmark handling in MaryTTS
+    - model: made model path and textures configurable
+
+version 3.1.0
+- date: 28th June 2018
+- RobotEngine Version: 2.2.0
+- PseudoBot features:
+    - speech:
+        - restored MaryTTS support
+        - removed option for scrambling the text -> that's a job for the control application
+    - 3D body:
+        - now uses imported Collada model (hardcoded path and joint mapping)
+        - closing the window now closes the whole application
+
+
+version 3.0.0
+- date: 15th May 2018
+- RobotEngine Version: 2.1.2
+- PseudoBot features:
+    - dropped MaryTTS support
+    - added FreeTTS support
+
+version 2.2.8
+- date: 1st February 2018
+- RobotEngine Version: 2.1.0
+- PseudoBot features:
+        - head pitch and roll are now available for animation
+        - z coordinate for gaze command is now supported
+
+version 2.2.7
+- date: 31st January 2018
+- RobotEngine Version: 2.1.0
+- PseudoBot features:
+        - window size can be adjusted via config and/or at runtime
+        - mouth closes when the animation thread is paused
+
+version 2.2.6
+- date: 23rd January 2018
+- RobotEngine Version: 2.1.0
+- PseudoBot features:
+	- second MIDI instrument can now be set via config or "setVoice" CommandMessage
+	- small cosmetic correction to head mesh, to avoid impression of angry eyebrows
+
+version 2.2.5
+- date: 19th December 2017
+- RobotEngine Version: 2.0.1
+- PseudoBot features:
+	- added second MIDI channel for "m" and "n" to support backchannel sounds
+	- fixed marker text normalization
+		
+version 2.2.4
+- date: 24th November 2017
+- RobotEngine Version: 2.0.1
+- PseudoBot features:
+	- moved MIDI output classes to subpackage
+	- added config parameters for speech text display
+		- font: family, size and style
+		- character scrambling
+
+version 2.2.3
+- date: 16th November 2017
+- RobotEngine Version: 2.0.1
+- PseudoBot features:
+	- improved intonation of MIDIVoiceEngine
+		- speech text is now split into separate phrases
+		- prosody pitch is now picked from the (major) scale over the base pitch
+		- syllables now vary in length, based on simple heuristics
+
+version 2.2.2
+- date: 14th November 2017
+- RobotEngine Version: 2.0.1
+- PseudoBot features:
+	- initial camera position and speed can be set via engine config
+
+version 2.2.1
+- date: 8th November 2017
+- RobotEngine Version: 2.0.0
+- PseudoBot features:
+	- "setVoice" commands now supported for all speech engines
+	- messaging: now provides reasons for command rejections
+	- logging:
+		- now uses the Java logging API
+		- global logging configuration: Level.INFO and BasicLogFormatter
+	- minor bugfix in default constructor
+
+version 2.2.0
+- date: 2nd November 2017
+- RobotEngine Version: 1.2.3
+- PseudoBot features:
+	- added MIDIVoiceEngine as an alternative to text output and MaryTTS
+	- added MIDI parameters to config:
+		- base pitch
+		- pitch variation range for simple prosody
+		- vowel and pause length
+		- velocity for on- and offset of each syllable
+		- bank and program for instrument selection
+
+version 2.1.2
+- date: 18th October 2017
+- RobotEngine Version: 1.2.2
+- PseudoBot features:
+	- textured WorldBox around the agent provides reference for camera movement
+	- added diffuse texture for the head mesh
+	- added config parameters for assigning the textures
+
+version 2.1.1
+- date: 5th October 2017
+- RobotEngine Version: 1.2.2
+- PseudoBot features:
+	- fixed "frozen mouth" bug: mesh animations are now executed via Timeline, as intended by JavaFX -> 3D display is updated properly
+	- AnimationService
+		- keeps track of minimum, maximum, default and current angles
+		- manages all joints in a consistent manner
+
+version 2.1.0
+- date: 4th October 2017
+- RobotEngine Version: 1.2.2
+- PseudoBot features:
+	- GUI upgraded from Swing/AWT to JavaFX
+	- 3D body with orbiting, zoomable camera
+	- added option for naming the PseudoBot
+
+version 2.0.2
+- date: 27th September 2017
+- RobotEngine Version: 1.2.2
+- PseudoBot features:
+	- upgraded to MaryTTS 5.2
+	- enabled choice between local and remote MaryTTS
+	- enabled some voice parameters for MaryTTS
+		- rate
+		- pitch
+		- F0 scale (i.e. pitch range)
+		- volume
+		- robotise
+
+version 2.0.1
+- date: 22th September 2017
+- RobotEngine version: 1.2.2
+- PseudoBot features:
+	- added option for enabling/disabling output of the FIFOSpeechScheduler underlying the SpeechWrapper
+
+version 2.0.0
+- date: 21th September 2017
+- RobotEngine version: 1.2.1
+- PseudoBot features:
+	- added voice output using MaryTTS (http://mary.dfki.de/)
+		- running server required
+		- German male and female voice included
+	- added robot configuration file which contains the speech settings
+	- fixed bug with "null" showing up in the display text
+
+version 1.1.0
+- date: 26th June 2017
+- RobotEngine version: 1.2.1
+- PseudoBot features:
+	- jaw movement during speech
+	- "led" command changes jaw color
+	- "gaze" command changes head yaw
+
+version 1.0.0
+- date: 10th May 2016
+- RobotEngine version: 1.1.4
+- engine features: TTS functionality with FIFO scheduling
+- PseudoBot features:
+	- emulated TTS service
+		- based on Acapela syntax
+		- speech timing calculated from vowels
+		- internal/hidden FIFO scheduling
+		- available events, intentionally without job IDs:
+			- (type=STARTED, data=<null>)
+			- (type=WORD_STARTED, data=<word>)
+			- (type=BOOKMARK, data=<id>)
+			- (type=STOPPED, data=<null>)
+	- GUI frame
+		- displays the currently spoken word
+		- displays the current bookmark

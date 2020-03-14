@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<category name="all">
+<category name="speech">
+<command lipSync="true" task="task0" text="The sun is shining and the Danube steamboat cruise captain gets a sunburn." type="speech"/>
+<command lipSync="true" task="task1" text="He should have taken sun block with him." type="speech"/>
+<command lipSync="true" task="task2" text="Silly fellow." type="speech"/>
+<command lipSync="true" task="task8" text="The sun is \mrk=1\ shining and the \mrk=2\ Danube steamboat cruise captain gets a \mrk=3\ sunburn \mrk=4\." type="speech"/>
+<category name="German">
+<command lipSync="true" task="task16" text="Draußen scheint die Sonne, und der Donaudampfschifffahrtskapitän kriegt Sonnenbrand." type="speech"/>
+<command lipSync="true" task="task17" text="Hätte er mal lieber Sonnencreme mitgenommen." type="speech"/>
+<command lipSync="true" task="task18" text="So ein Dummerchen." type="speech"/>
+</category>
+</category>
+</category>

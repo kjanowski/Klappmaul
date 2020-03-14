@@ -1,0 +1,41 @@
+Sound mapping:
+
+M (benötigt für non-lexikalische Backchannel: "M-hm", "Hmm...", etc.)
+- bank 0	prog 4		E.Piano 1
+- bank 0	prog 8		Celesta
+- bank 0	prog 14		Tubular-bell
+- bank 0	prog 17		Organ 2
+- bank 0	prog 18		Organ 3
+- bank 0	prog 21		Accordion Fr
+- bank 0	prog 23		Bandoneon
+- bank 0	prog 24		Nylon-str.Gt
+- bank 0	prog 26		Jazz Gt.
+- bank 0	prog 28		Muted Gt.
+- bank 0	prog 32		Acoustic Bs.
+- bank 0	prog 35		Fretless Bs.
+- bank 0	prog 40		Violin
+- bank 0	prog 41		Viola
+- bank 0	prog 42		Cello
+- bank 0	prog 43		Contrabass
+- bank 0	prog 46		Harp
+- bank 0	prog 48		Strings
+- bank 0	prog 54		SynVox
+- bank 0	prog 60		French Horns
+- bank 0	prog 65		Alto Sax
+- bank 0	prog 70		Bassoon
+- bank 0	prog 71		Clarinet
+- bank 0	prog 74		Recorder
+- bank 0	prog 77		Shakuhachi
+- bank 0	prog 79		Ocarina
+- bank 0	prog 88		Fantasia
+- bank 0	prog 90		Polysynth
+- bank 0	prog 91		Space Voice
+- bank 0	prog 110	Fiddle
+- bank 128	prog 102	Echo Bell
+- bank 256	prog 102	Echo Pan
+- bank 1024	prog 21 	Accordion It
+- bank 1024	prog 40 	Slow Violin
+- bank 1024	prog 48 	Orchestra
+- bank 1024	prog 63 	Synth Brass4
+- bank 2048	prog 39 	Rubber Bass
+- bank 2048	prog 63 	AnalogBrass2
