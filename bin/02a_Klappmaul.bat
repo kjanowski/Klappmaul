@@ -27,7 +27,8 @@ SET CONFIG=res\config\appConfig_Klappmaul.properties
 ::-------------------------------------------------------------------
 :: use this if you want to enforce a particular Java version:
 ::-------------------------------------------------------------------
-set JAVA_HOME=D:\Entwicklung\Java\jdk1.8.0_192
+::set JAVA_HOME=D:\Entwicklung\Java\jdk1.8.0_192
+SET JAVA_HOME=D:\Anwendungen\Entwicklung\Java\jdk1.8.0_192
 "%JAVA_HOME%\bin\java" -cp %CLASSP% de.kmj.robots.RobotEngineRemoteApplication %CONFIG%
 
 ENDLOCAL
