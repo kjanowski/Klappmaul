@@ -7,6 +7,6 @@ SET CLASSPATH=".;%MARY_BASE%\*"
 ::------------------------------------------------------------
 :: use this to enforce a specific Java version
 ::------------------------------------------------------------
-set JAVA_HOME=D:\Entwicklung\Java\jdk1.8.0_192
+set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_192
 "%JAVA_HOME%\bin\java" -showversion -ea -Xms40m -Xmx1g -cp %CLASSPATH% "-Dmary.base=%MARY_BASE%" marytts.server.Mary
 

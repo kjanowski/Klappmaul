@@ -13,11 +13,11 @@ echo.Starting The Control Application
 echo.-------------------------------------------------
 @echo on
 
-
-java -cp dist de.kmj.robots.controlApp.DefaultControlApplication res/ControlApp.config
+SET JAVA_HOME=C:\Program Files\Java\jdk1.8.0_192
+"%JAVA_HOME%\bin\java" -cp ".;lib/RobotEngine.jar" de.kmj.robots.controlApp.DefaultControlApplication res/ControlApp.config
 
 ENDLOCAL
 
 :: uncomment for debugging purposes
-::PAUSE
+PAUSE
 
